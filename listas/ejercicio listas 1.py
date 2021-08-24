@@ -3,6 +3,7 @@ a: la sumatoria
 b: la productoria
 c: el mayor elemento
 d: el menor elemento"""
+
 from math import prod
 
 rounds = 6
