@@ -1,4 +1,11 @@
-# ejercicio 9
+"""9. Kia Autos premia anualmente a sus mejores vendedores de acuerdo a la
+siguiente tabla:
+Valor vendido Comisión
+Menor o igual que 20 Millones = 10%
+Mayor de 20 Millones y menor de 40 Millones = 15%
+Mayor o igual de 40 = 20%"""
+
+
 sellers = 100
 
 for i in range(sellers):

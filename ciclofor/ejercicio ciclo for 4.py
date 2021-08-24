@@ -1,8 +1,9 @@
-# exercise 4
+"""4. Calcular el promedio de edades de hombres, mujeres y de todo un grupo
+de alumnos."""
+
 print("Average age of students")
 
 students = int(input("Enter the number of students: "))
-
 ages_students = 0
 
 for i in range(students):
@@ -10,6 +11,5 @@ for i in range(students):
 
 	if age > 0:
 		ages_students = ages_students + age
-
 
 print(f"The average age of students is {ages_students / students} ")

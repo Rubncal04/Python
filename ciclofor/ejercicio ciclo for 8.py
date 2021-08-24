@@ -1,8 +1,12 @@
-# ejercicio 8
+"""8. Un teatro otorga descuentos según la edad del cliente, determinar la
+cantidad del dinero que el teatro deja de percibir por cada ua de las
+categorias. Tomar en cuenta que los niños menores de 5 años no pueden
+entrar al teatro y que existe un precio único en los asientos. Los descuentos
+se hacen tomando en cuenta el siguiente cuadro:"""
+
 print("Descuentos por categorías\ncategoría A 35%: De 5 a 14 años\ncategoría B 25%: De 15 a 19 años\ncategoría C 10%: De 20 a 45 años\ncategoría D 25%: De 46 a 65 años\ncategoría E 35%: De 66 en adelante")
 
 valor_boleta = 12000
-
 categoriaA = 0
 categoriaB = 0
 categoriaC = 0

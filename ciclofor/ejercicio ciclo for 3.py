@@ -1,4 +1,8 @@
-# ejercicio 3: calcular el salario de un obrero
+"""3. Una empresa se requiere calcular el salario semanal de cada uno de los n
+obreros que laboran en ella. El salario se obtiene de la siguiente forma:
+a. Si el obrero trabaja 40 horas o menos se le paga $20 por hora
+b. Si trabaja mas de 40 horas se le paga $20 por cada una de
+las primeras 40 horas y $25 por cada hora extra"""
 
 print("checking the salary of a worker")
 
