@@ -16,7 +16,7 @@ for i in range(1, 3):
 	weight = float(input(f"Enter the {i + 1}° weight: "))
 	if weight > 0:
 		final_weight = final_weight + weight
-		
+
 
 avarage = ((final_weight + first_weight) / 3)
 
