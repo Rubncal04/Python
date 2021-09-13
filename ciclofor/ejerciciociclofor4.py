@@ -7,7 +7,7 @@ students = int(input("Enter the number of students: "))
 ages_students = 0
 
 for i in range(students):
-	age = int(input(f"Enter age of student {i + 1}: "))
+	age = int(input(f"Enter age of the {i + 1}° student: "))
 
 	if age > 0:
 		ages_students = ages_students + age
