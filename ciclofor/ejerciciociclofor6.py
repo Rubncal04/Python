@@ -8,18 +8,48 @@ es negativa, significa que bajaron. Lo que el problema requere es que por
 cada persona se imprima un letrero que diga: “SUBIÓ” o “BAJÓ” y la
 cantidad de kilos que subió o bajó de peso."""
 
-fatBoys = 5
-fatBoy1 = []
-cont = 0
-cont2 = 0
+fatBoy1 = float(input("Enter the first weight 1° fat boy: "))
+fatBoy2 = float(input("Enter the first weight 2° fat boy: "))
+fatBoy3 = float(input("Enter the first weight 3° fat boy: "))
+fatBoy4 = float(input("Enter the first weight 4° fat boy: "))
+fatBoy5 = float(input("Enter the first weight 5° fat boy: "))
 
-for i in range(5):
-	if cont2 < 5:
-		for x in range(i):
-			while cont < 10:
-				weight = float(input("Enter the first weight: "))
-				fatBoy1.append(weight)
-				cont += 1
-				break;
-	cont2 +=
-print(fatBoy1)
+fatBy1 = 0
+fatBy2 = 0
+fatBy3 = 0
+fatBy4 = 0
+fatBy5 = 0
+
+
+
+for i in range(1,3):
+	weight1 = float(input(f"Enter the {i + 1} weight of the first fat boy: "))
+	fatBy1 = fatBy1 + weight1
+
+	weight2 = float(input(f"Enter the {i + 1} weight of the second fat boy: "))
+	fatBy2 = fatBy2 + weight2
+
+	weight3 = float(input(f"Enter the {i + 1} weight of the third fat boy: "))
+	fatBy3 = fatBy3 + weight3
+
+	weight4 = float(input(f"Enter the {i + 1} weight of the fourth fat boy: "))
+	fatBy4 = fatBy4 + weight4
+
+	weight5 = float(input(f"Enter the {i + 1} weight of the fifth fat boy: "))
+	fatBy5 = fatBy5 + weight5
+
+
+def boyFat(fat, fatb):
+	avarage = (fat + fatb) / 3
+	if avarage < fatb:
+		print(f"You have down {fatb - avarage}")
+	elif avarage > fatb:
+		print(f"You have up {avarage - fatb}")
+	else:
+		print("You have stayed")
+
+boyFat(fatBy1, fatBoy1)
+boyFat(fatBy2, fatBoy2)
+boyFat(fatBy3, fatBoy3)
+boyFat(fatBy4, fatBoy4)
+boyFat(fatBy5, fatBoy5)
