@@ -3,25 +3,20 @@ las siguientes operaciones:
 a. Suma
 b. Resta"""
 
-import itertools
-
 listA = []
 listB = []
+list3 = []
+list4 = []
 
-def subtraction(a, b):
-    print(f"The subtraction of all numbers is: {a - b}")
+for i in range(6):
+    list1 = int(input("Enter one number for the first list: "))
+    listA.append(list1)
+    list2 = int(input("Enter one number for the second list: "))
+    listB.append(list2)
 
-for i in range(7):
-    listOne = int(input("Choose one number for the first list: "))
-    listA.append(listOne)
+for i in range(len(listA)):
+    list3.append(listA[i] + listB[i])
+    list4.append(listA[i] - listB[i])
 
-    listTwo = int(input("Choose one number for the second list: "))
-    listB.append(listTwo)
-
-listC = list(itertools.chain(listA, listB))
-print("-------------------------------------------------")
-print(f"This is the first list: {listA}\n")
-print(f"This is the second list: {listB}\n")
-print(f"This is your complited list: {listC}\n")
-print(f"The sum of all numbers of complited list is: {sum(listC)}\n")
-subtraction(sum(listA), sum(listB))
+print(list3)
+print(list4)
