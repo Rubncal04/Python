@@ -20,9 +20,7 @@ fatBy3 = 0
 fatBy4 = 0
 fatBy5 = 0
 
-
-
-for i in range(1,3):
+for i in range(1,10):
 	weight1 = float(input(f"Enter the {i + 1} weight of the first fat boy: "))
 	fatBy1 = fatBy1 + weight1
 
@@ -39,8 +37,9 @@ for i in range(1,3):
 	fatBy5 = fatBy5 + weight5
 
 
-def boyFat(fat, fatb):
+def calculate_operation_fat(fat, fatb):
 	avarage = (fat + fatb) / 3
+	
 	if avarage < fatb:
 		print(f"You have down {fatb - avarage}")
 	elif avarage > fatb:
