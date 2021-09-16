@@ -7,14 +7,13 @@ que irá gastando en los demás artículos, hasta que decide que ya tomó
 todo lo que necesitaba. Ayúdele a esta señora a obtener el total de su
 compra."""
 
-nProducts = int(input("How many products do you want to buy? "))
-totalCash = 0
+nProducts = int(input("How many different products do you want to buy? "))
+grand_total = 0
 
 for i in range(nProducts):
-    product = int(input("How many? "))
-    cost = int(input("How much it cost in Dollars? "))
-    cash = cost * product
-    totalCash = totalCash + cash
+    product = int(input("How many of these? "))
+    cost = int(input("How much it costs in Dollars? "))
+    sub_total = cost * product
+    grand_total = grand_total + sub_total
 
-print()
-print(f"You have spent {totalCash} Dollars")
+print(f"\nYou have spent {grand_total} Dollars")
