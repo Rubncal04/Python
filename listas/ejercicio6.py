@@ -14,18 +14,19 @@ x = []
 for i in range(1, ask + 1):
     number = int(input(f"Enter the {i}° number for your list: "))
     x.append(number)
-    if i % 2 == 0:
-        x1 = int(math.floor(len(x) / 2))
-        y = x[:x1]
-        z = x[x1:]
-    elif i % 2 != 0:
-        x1 = int(math.floor(len(x) / 2))
-        y = x[:x1]
-        z = x[x1+1:]
+
+x1 = int(len(x) / 2)
+
+if ask % 2 == 0:
+    y = x[:x1]
+    z = x[x1:]
+else:
+    y = x[:x1]
+    z = x[x1+1:]
 
 def exchange():
     count = 0
-    for n in range(math.floor(len(z) / 2)):
+    for n in range(int(len(z) / 2)):
         count -= 1
         z[n], z[count] = z[count], z[n]
     return z
