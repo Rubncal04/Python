@@ -31,6 +31,6 @@ def exchange():
     return z
 
 if y == exchange():
-    print(f"They are the sames {y} and {z}")
+    print(f"They are the sames:\nfirst list: {y}\nSecond list: {z}")
 else:
     print("They aren't sames")
