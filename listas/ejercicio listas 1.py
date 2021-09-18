@@ -6,12 +6,11 @@ d: el menor elemento"""
 
 from math import prod
 
-rounds = 6
 highest = int(input("Enter the first number: "))
 numbers = [highest]
 smallest = highest
 
-for i in range(1,rounds):
+for i in range(1, 6):
 	number = int(input(f"Enter the {i + 1}° number: "))
 	numbers.append(number)
 
@@ -19,7 +18,7 @@ for i in range(1,rounds):
 		smallest = numbers[i]
 
 	if numbers[i] > highest:
-		highest = numbers[i] 	
+		highest = numbers[i]
 
 print(f"These are all your list: {numbers[:]}")
 print(f"the highest number is: {highest}")
