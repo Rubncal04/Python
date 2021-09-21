@@ -12,7 +12,7 @@ class People():
         self.age = 0
         self.dni = 0
 
-    def obtening(self, name, age, dni):
+    def getting_info(self, name, age, dni):
             self.name = name
             self.age = age
             self.dni = dni
@@ -31,6 +31,6 @@ Age = int(input("Enter your age: "))
 Dni = int(input("Enter your number identification: "))
 
 person1 = People()
-person1.obtening(Name, Age, Dni)
+person1.getting_info(Name, Age, Dni)
 person1.show()
 print("\n",person1.isElder())
