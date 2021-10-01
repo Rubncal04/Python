@@ -3,7 +3,7 @@ cuántos son impares y cuántos ceros"""
 
 print("Serie Fibonacci")
 
-n_elements = [2, 3, 7, 0, 6]
+n_elements = [0, 1, 1, 3, 5, 8, 13, 21, 34, 55, 89, 144]
 even = []
 odd = []
 cero = []
