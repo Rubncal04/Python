@@ -11,28 +11,9 @@ pero menor de 25 años y falso en caso contrario.
 5. El método mostrar() debe devolver el mensaje de “Cuenta Joven” y la bonificación de la cuenta.
 * Piensa los métodos heredados de la clase madre que hay que reescribir."""
 
-class Account():
-    def __init__(self, owner):
-        self.__owner = owner
-        self.__number_account = "00890334"
-        self.__saved_money = 0
+from exercisefromweb2 import *
 
-    def putting_money(self, putMoney):
-        if put_money < 0:
-            return "Please, Enter a positive value"
-        else:
-            self.__saved_money += putMoney
-            return {self.__saved_money}
-
-    def withdraw_money(self, withdraw):
-        self.__saved_money -= withdraw
-        return f"money saved:  ${self.__saved_money}"
-
-    def show(self):
-        print(f"\nPersonal information\nUser: {self.__owner}\nNumber account: {self.__number_account}")
-
-
-class Account_young(Account):
+class AccountYoung(Account):
 
     def __init__(self):
 
@@ -41,8 +22,10 @@ class Account_young(Account):
         self.__age = 0
         self.__bonus = 5
 
-    def age_young(self, age):
+    def set_age_young(self, age):
         self.__age = age
+
+    def get_age_young(self):
         return self.__age
 
     def elder(self):
@@ -54,15 +37,15 @@ class Account_young(Account):
             return self.young_elder
 
     def bonus_card(self):
-        self.__bonus = self.saved_money * 0.5
+        self.__bonus = self.saved_money * 0.05
         return self.__bonus
 
     def show(self):
-        if self.young_elder == True:
+        if self.young_elder:
             super().show()
-            print(self.__bonus)
+            print(f"Your bonus is: {self.__bonus}")
         else:
-            print("You're not avaliabled")
+            print("You're not enabled")
 
 
 user = input("Enter your Username: ")
@@ -74,8 +57,8 @@ age = int(input("Enter your age: "))
 #person1.show()
 #person1.putting_money(put_money)
 #print(person1.withdraw_money(withdraw))
-young = Account_young()
-young.age_young(age)
+young = AccountYoung()
+young.set_age_young(age)
 young.elder()
 young.show()
-print(isinstance(young, Account))
+#print(isinstance(young, Account))
