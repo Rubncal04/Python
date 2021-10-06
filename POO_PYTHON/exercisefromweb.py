@@ -6,31 +6,46 @@ mostrar(): Muestra los datos de la persona.
 esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad."""
 
 
-class People():
-    def __init__(self):
-        self.name = ""
-        self.age = 0
-        self.dni = 0
+class Person():
+    def __init__(self, name, age, dni):
+        self.__name = name
+        self.__age = age
+        self.__dni = dni
 
-    def getting_info(self, name, age, dni):
-            self.name = name
-            self.age = age
-            self.dni = dni
+    def set_name(self, name):
+        self.__name = name
 
-    def isElder(self):
-        if (self.age) > 18:
+    def set_age(self, age):
+        self.__name = age
+
+    def set_dni(self, dni):
+        self.__dni = dni
+
+    def get_name(self):
+        return self.__name
+
+    def get_age(self):
+        return self.__age
+
+    def get_dni(self):
+        return self.__dni
+
+    def is_elder(self):
+        if (self.__age) > 18:
             return "You are elder."
         else:
             return "you are so young"
 
     def show(self):
-        print(f"Your personal information is:\nname: {self.name.capitalize()}\nage: {self.age}\nDNI: {self.dni}")
+        print(f"Your personal information is:\nName: {self.__name.capitalize()}\
+              \nAge: {self.__age}\nDNI: {self.__dni}")
 
-Name = input("What's your name? ")
-Age = int(input("Enter your age: "))
-Dni = int(input("Enter your number identification: "))
+name = input("What's your name? ")
+age = int(input("Enter your age: "))
+dni = int(input("Enter your identification number: "))
 
-person1 = People()
-person1.getting_info(Name, Age, Dni)
-person1.show()
-print("\n",person1.isElder())
+person1 = Person(name, age, dni)
+#person1.show()
+#person1.set_name("Ruben")
+#person1.show()
+print("\n",person1.is_elder())
