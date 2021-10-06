@@ -30,11 +30,11 @@ class Account():
         print(f"\nPersonal information\nUser: {self.__owner}\nNumber account: {self.__number_account}")
 
 
-user = input("Enter your Username: ")
-put_money = int(input("How many money do you want to save? "))
-withdraw = int(input("withdraw money: "))
+#user = input("Enter your Username: ")
+#put_money = int(input("How many money do you want to save? "))
+#withdraw = int(input("withdraw money: "))
 
-person1 = Account(user)
-person1.putting_money(put_money)
-person1.show()
-print(person1.withdraw_money(withdraw))
+#person1 = Account(user)
+#person1.putting_money(put_money)
+#person1.show()
+#print(person1.withdraw_money(withdraw))
