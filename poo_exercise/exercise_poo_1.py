@@ -1,5 +1,3 @@
-from fractions import Fraction
-
 """
 1.Programe una clase que permite crear un número Fraccionario y realizar las
 siguiente operaciones:
@@ -63,7 +61,7 @@ class Fraction():
 
 number = Fraction(6, 4)
 number2 = Fraction(8, 5)
-# print(number.sum(number2).display())
+print(number.sum(number2).display())
 # print(number.subtract(number2).display())
 # print(number.set_fraction(), number2.set_fraction())
 # number.mixed_number()
