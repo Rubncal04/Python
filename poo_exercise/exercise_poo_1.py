@@ -58,10 +58,10 @@ class Fraction():
     def mixed_number(self):
         cocient = self.numerator // self.denominator
         result = self.numerator % self.denominator
-        print(cocient, Fraction(result, self.denominator))
+        print(cocient, Fraction(result, self.denominator).display())
 
 
-number = Fraction(1, 4)
+number = Fraction(6, 4)
 number2 = Fraction(8, 5)
 # print(number.sum(number2).display())
 # print(number.subtract(number2).display())
